@@ -59,7 +59,6 @@ class _events_pageState extends State<events_page> {
                                                 onChanged: (value) {
                                                   setState(() {
                                                     temp = value;
-                                                    Navigator.pop(context);
                                                   });
                                                 },
                                                 decoration: InputDecoration(
@@ -78,6 +77,7 @@ class _events_pageState extends State<events_page> {
                                                     onPressed: () {
                                                       setState(() {
                                                         _listoftasks[index] = temp;
+                                                        Navigator.pop(context);
                                                       });
                                                     },
                                                     child: Text('Update',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
